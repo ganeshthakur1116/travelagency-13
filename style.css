@@ -1,0 +1,219 @@
+
+ /* Carousel Fullscreen Styling */
+  .carousel-item {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease, transform 2s ease-in;
+  }
+  .carousel-item.active {
+    opacity: 1;
+    transform: scale(1.1); /* Zoom in slightly */
+  }
+  .carousel-item:nth-child(1) {
+    background: url('/images/boat&building-heroheader-1.jpg') no-repeat center center/cover;
+  }
+
+  .carousel-item:nth-child(2) {
+    background: url('/images/colorful-building-heroheader2.jpg') no-repeat center center/cover;
+  }
+
+  .carousel-item:nth-child(3) {
+    background: url('/images/man-with-3camel-brightsun.jpg') no-repeat center center/cover;
+  }
+
+    /* Add a semi-transparent overlay */
+    .carousel-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Adjust transparency (0.4) as needed */
+        z-index: 1;
+      }
+  
+      /* Ensure the captions are on top */
+      .carousel-caption {
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.4) !important; /* Semi-transparent */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+  }
+  /* Custom Fade Duration for Carousel */
+  .carousel-fade .carousel-item {
+    transition: opacity 0.5s ease-in-out; /* Adjusted the duration (0.5s) as needed */
+  }
+
+  /* main highlights section */
+
+  /*  popular tours Section */
+  .popular-tours-section {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa; /* Light background */
+  }
+
+  .tour-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .tour-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .tour-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .tour-card-body {
+    padding: 1rem;
+  }
+
+  .tour-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+  }
+
+  /**  why choose Us Section**/
+
+  .why-choose-us-section {
+    padding: 4rem 1rem;
+    background-color: #f1f1f1; /* Light grey background */
+  }
+
+  .why-choose-us-section h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .why-choose-us-section p {
+    margin-bottom: 2rem;
+    color: #555; /* Subtle grey color for intro text */
+  }
+
+  .feature-card {
+    text-align: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature-card i {
+    font-size: 2.5rem;
+    color: #007bff; /* Primary color */
+    margin-bottom: 1rem;
+  }
+
+  .feature-card h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card p {
+    color: #777; /* Subtle grey for descriptions */
+  }
+
+   /* Testimonials Section */
+  
+   body #testimonials {
+    padding: 4rem 2rem;
+    background-color: #f1f1f1;
+    background: linear-gradient(135deg, #f9f9f9, #ececec); /* Change to any background */
+    text-align: center;
+  }
+  
+  .testimonial-carousel {
+    background-color: #ffffff; /* New background for carousel */
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-carousel .testimonial {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .testimonial-carousel .testimonial-name {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #0a1d8c;
+  }
+
+  /* Partners Section */
+  .partners-section {
+    background-color: #f1f1f1;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .partners-section img {
+    max-width: 200px;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .partners-section img:hover {
+    transform: scale(1.1);
+  }
+
+/** footer section **/
+
+  footer {
+    background-color: #212529; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 2rem 0;
+  }
+  
+  footer a {
+    color: #ffffff; /* White for links */
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #ffc107; /* Highlight link on hover */
+  }
+  
+  footer .social-icons i {
+    font-size: 1.5rem;
+  }
+  
+  footer form .form-control {
+    border-radius: 0;
+  }
+  
+  footer form .btn {
+    border-radius: 0;
+    width: 100%;
+  }
