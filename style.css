@@ -728,3 +728,22 @@
   .calender-date h4{
     margin-bottom: 20px;
   }
+
+  .gradient-btn {
+    background: linear-gradient(to right, #002f6c, #0052cc);
+    color: white;
+  }
+  .gradient-header {
+      background: linear-gradient(to right, #002f6c, #0052cc);
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+  }
+
+  .navbar-nav .nav-item{
+    margin-right: 15px;
+  }
+  .form-label {
+    font-weight: bold;
+}
